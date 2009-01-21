@@ -3,9 +3,10 @@ class TRPlayer
     state[0] = 'x'
     return state
   end
-  
-  def init
-    return TRPlayer.new
-  end
-
 end
+
+def init
+  return TRPlayer.new
+end
+
+
