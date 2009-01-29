@@ -10,7 +10,7 @@ class TRPlayer
     slot = rand(empty)
     ei = 0
     for i in 0..9
-      next if x != "." 
+      next if state[i] != "." 
       if ei == slot
         state[i] = @xoro
         return state
