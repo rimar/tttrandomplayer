@@ -6,12 +6,12 @@ class TRPlayer
   end
 
   def makeMove(state)
-    empty = state.count{|x| x==""}
+    empty = state.count{|x| x=="."}
     slot = rand(empty)
     i=-1
     return state.map{|x| 
       i+=1
-      if x=="" && i == slot 
+      if x=="." && i == slot 
         @xoro 
       else 
         x 
