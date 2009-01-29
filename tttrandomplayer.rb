@@ -8,11 +8,15 @@ class TRPlayer
   def makeMove(state)
     empty = state.count{|x| x=="."}
     slot = rand(empty)
-    i=-1
-    state.map{|x| 
-      i+=1 if x=="." 
-      (i==slot)?@xoro:x
-    }
+    ei = 0
+    for i in 0..9
+      next if x != "." 
+      if ei == slot
+        state[i] = @xoro
+        return state
+      end
+      ei++
+    end
   end
 
   def to_s
