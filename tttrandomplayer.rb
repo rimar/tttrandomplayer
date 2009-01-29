@@ -8,7 +8,7 @@ class TRPlayer
   def makeMove(state)
     empty = state.count{|x| x==""}
     slot = rand(empty)
-    i=0
+    i=-1
     return state.map{|x| 
       i+=1
       if x=="" && i == slot 
