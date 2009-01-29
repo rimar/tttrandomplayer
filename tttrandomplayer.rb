@@ -9,13 +9,9 @@ class TRPlayer
     empty = state.count{|x| x=="."}
     slot = rand(empty)
     i=-1
-    return state.map{|x| 
-      i+=1
-      if x=="." && i == slot 
-        @xoro 
-      else 
-        x 
-      end
+    state.map{|x| 
+      i+=1 if x=="." 
+      (i==slot)?@xoro:x
     }
   end
 
