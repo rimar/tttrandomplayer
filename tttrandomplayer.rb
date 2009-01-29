@@ -15,7 +15,7 @@ class TRPlayer
         state[i] = @xoro
         return state
       end
-      ei++
+      ei+=1
     end
   end
 
