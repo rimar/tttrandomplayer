@@ -29,5 +29,4 @@ def tttrandomplayer(name, xoro)
   TRPlayer.new(name, xoro)
 end
 
-load 'config.rb'
 
