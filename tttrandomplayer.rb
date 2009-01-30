@@ -25,7 +25,7 @@ class TRPlayer
 
 end
 
-def player(name, xoro)
+def tttrandomplayer(name, xoro)
   TRPlayer.new(name, xoro)
 end
 
