@@ -1,10 +1,5 @@
 class TRPlayer
   
-  def initialize(name, xoro)
-    @name = name
-    @xoro = xoro
-  end
-
   def makeMove(state)
     empty = state.count{|x| x=="."}
     slot = rand(empty)
@@ -25,8 +20,8 @@ class TRPlayer
 
 end
 
-def tttrandomplayer(name, xoro)
-  TRPlayer.new(name, xoro)
+def tttrandomplayer
+  TRPlayer.new
 end
 
 
