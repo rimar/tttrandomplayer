@@ -15,7 +15,7 @@ class TRPlayer
   end
 
   def to_s
-    "TRPlayer: " + @name
+    "TRPlayer: " + @name.to_s
   end
 
 end
